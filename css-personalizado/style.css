@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.active-label {
+  transform: translateY(-5px);
+  box-shadow: 1px 2px 4px #323030; }
+
+body {
+  background: #FFE3B3; }
+  body input, body .btn-importancia, body .btn-crear {
+    transition-property: transform, box-shadow;
+    transition-duration: 0.4s; }
+    body input:hover, body .btn-importancia:hover, body .btn-crear:hover {
+      transform: translateY(-5px);
+      box-shadow: 1px 2px 4px #323030; }
+  body .importante div, body .medio-importante div, body .poco-importante div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #DF4D3C; }
+
+.btn-crear {
+  background: #DF4D3C;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 56px;
+  color: white;
+  box-shadow: 1px 1px 3px #706c6c; }
+
+.caja-formulario {
+  width: 439px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  overflow: hidden; }
+  .caja-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+    .caja-formulario form input {
+      height: 55px;
+      border: none;
+      border-radius: 5px;
+      padding: 20px;
+      background: #FEAD4C; }
+      .caja-formulario form input::placeholder {
+        color: #423E3E; }
+    .caja-formulario form .alerts {
+      background: #fff;
+      border-radius: 5px;
+      padding: 10px;
+      transform: translateY(-5px);
+      box-shadow: 1px 2px 4px #323030;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .caja-formulario form .alerts p {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        height: 30px;
+        padding: 0px 5px;
+        margin: 0;
+        border-left: 3px solid red; }
+  .caja-formulario .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; }
+    .caja-formulario .btns .btn-two {
+      display: flex;
+      gap: 4px; }
+    .caja-formulario .btns .btn-importancia {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #DF4D3C;
+      border: none;
+      border-radius: 5px;
+      height: 47px;
+      width: 190px;
+      font-weight: bolder;
+      cursor: pointer; }
+    .caja-formulario .btns .btn-importancia.baja {
+      width: 60%; }
+  .caja-formulario .div-btn {
+    width: 100%; }
+    .caja-formulario .div-btn:hover > .agregar {
+      background: #ab382c; }
+  .caja-formulario .agregar {
+    background: #DF4D3C;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 23px; }
+
+.tareas {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px #323030; }
+  .tareas .importante, .tareas .poco-importante {
+    background: #FEAD4C; }
+  .tareas .medio-importante {
+    background: #F67834; }
+
+/*# sourceMappingURL=style.css.map */

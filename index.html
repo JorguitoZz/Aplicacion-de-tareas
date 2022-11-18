@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/css/normalize.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css-personalizado/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <!-- Crear tarea -->
+        <div class="row my-5">
+            <div class="col-2">
+                <button type="button" class="btn-crear">Crear Tarea</button>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="row d-flex justify-content-between">
+            <div class="col-4 p-0">
+                <div class="caja-formulario">
+                    
+                    <div class="caja-formulario-imputs">
+                        <form class="p-3 " id="formulario">
+                            
+                            <input type="text" name="nombre-tarea" id="nombre-tarea" class="form-camp" placeholder="Nombre de la tarea">
+
+                            
+                            <input type="number" name="horas" id="horas" class="form-camp" placeholder="horas de la tarea 'en numero'">
+
+                            <p class="h5 m-0">Introduce desde que hora hasta que hora</p>
+
+                           
+                            <input type="time" name="desde" id="desde" class="form-camp">
+
+                            
+                            <input type="time" name="hasta" id="hasta" class="form-camp">
+                            
+                            
+                            <div class="btns">
+                                <p class="h5">Nivel de importancia</p>
+                                <div class="btn-two">
+                                    <label  class="btn-importancia important" for="important-btn" id="imp-btn">Importante</label>
+                                    <input type="radio" class="d-none" name="important-btn" id="important-btn">
+                                    <label  class="btn-importancia mediun" for="mediun-btn" id="media-btn">Media</label>
+                                    <input type="radio" class="d-none" name="mediun-btn" id="mediun-btn">
+                                </div>
+                                <label  class="btn-importancia baja" for="low-btn" id="bajo-btn">Baja</label>
+                                <input type="radio" class="d-none" name="low-btn" id="low-btn">
+                            </div>
+
+                        </form>
+
+
+                    </div>
+
+                        <div class="div-btn">
+                            <button type="submit" class="agregar" id="enviar">
+                                Agregar
+                            </button>
+                        </div>
+                </div>
+
+            </div>
+        
+
+            <!-- Contenedor de tareas -->
+      
+            <div class="col-6 p-0">
+                <div class="tareas">
+                    <div class="importante" id="container-importante">
+                        <div class="title-tarea">
+                            <h3>Tareas Importantes</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="medio-importante" id="container-medio">
+                        <div class="title-tarea">
+                            <h3>Tareas medio importantes</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="poco-importante" id="container-bajo">
+                        <div class="title-tarea">
+                            <h3>Tareas poco Importantes</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="loco"></div>
+    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
